@@ -1,19 +1,19 @@
 ===BEGIN LAB1 SUBMISSION===
 student_id: 6705142042
-timestamp: 2026-09-01T03:35:00Z
+timestamp: 2026-09-01T04:25:47Z
 hostname: ubuntu
 ---[user: getent passwd]---
-(MISSING user olga925)
+olga925:x:1001:1002::/home/olga925:/bin/sh
 ---[group: getent group]---
-(MISSING group webteam)
+webteam:x:1001:olga925
 ---[user-in-group: id]---
-(cannot id olga925)
+uid=1001(olga925) gid=1002(olga925) groups=1002(olga925),1001(webteam)
 ---[file stat: home file mode/owner]---
-(MISSING file report_3298.txt)
+/home/olga925/report_3298.txt mode=750 owner=olga925 group=webteam
 ---[sshd effective config]---
 port 22
 permitrootlogin yes
 passwordauthentication yes
 ---[integrity]---
-sshd_sha256: 46a5c6e5da3aee40c5b71c5b19192fe64ca914acaa92d19bc6eef79e50926782
+sshd_sha256: 389aed11fc930bfd98ae8fe2608a0c127f2dd9af405f22755ae729d890a54d02
 ===END LAB1 SUBMISSION===
